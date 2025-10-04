@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuralt Nätverk Visualisering</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Neuralt Nätverk Visualisering</h1>
+    <div id="controls">
+      <label>
+        Antal Input:
+        <select id="inputCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+      <label>
+        Antal Dolda Lager:
+        <select id="hiddenLayersCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </label>
+      <label>
+        Antal Noder i Doldt Lager 1:
+        <select id="hiddenLayer1Nodes">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+      <span id="hiddenLayer2Control" style="display: none">
+        <label>
+          Antal Noder i Doldt Lager 2:
+          <select id="hiddenLayer2Nodes">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+      </span>
+      <label>
+        Antal Output:
+        <select id="outputCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </label>
+      <label>
+        Aktiveringsfunktion:
+        <select id="activationFunction">
+          <option value="relu">ReLU</option>
+          <option value="logistic">Logistic</option>
+        </select>
+      </label>
+      <button id="buildNetwork">Bygg Nätverk</button>
+    </div>
 
+    <div id="network-container">
+      <svg id="connections-svg"></svg>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
