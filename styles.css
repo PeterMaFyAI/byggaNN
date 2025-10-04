@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#controls label {
+  margin: 0 10px;
+}
+
+#network-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ccc;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nodes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer-controls button {
+  margin-bottom: 5px;
+}
+
+.node {
+  position: relative;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 50px;
+}
+
+.input-node {
+  background-color: #aedff7;
+}
+
+.hidden-node {
+  background-color: #c1e1c1;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.output-node {
+  background-color: #f7a8a8;
+}
+
+.node-box {
+  border: 1px solid #666;
+  border-radius: 3px;
+  margin: 2px;
+  padding: 2px 4px;
+  min-width: 30px;
+  font-size: 0.9em;
+}
+
+.act-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#connections-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: visible;
+}
